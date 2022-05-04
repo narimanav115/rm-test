@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../character_bloc/character_bloc.dart';
 import '../character_bloc/character_event.dart';
 import '../character_bloc/character_state.dart';
+
 import 'widgets/character_card.dart';
 
 const listPadding = EdgeInsets.only(left: 16, top: 16, right: 16);

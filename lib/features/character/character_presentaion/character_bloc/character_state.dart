@@ -1,7 +1,7 @@
 import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import '../character_domain/character_models/character_model.dart';
-import '../character_domain/character_models/character_page_model.dart';
+import '../../character_domain/character_models/character_model.dart';
+import '../../character_domain/character_models/character_page_model.dart';
 
 part 'character_state.freezed.dart';
 

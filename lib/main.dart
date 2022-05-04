@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:rm_test/features/character/character_bloc/character_bloc.dart';
 import 'package:rm_test/features/character/character_data/character_api.dart';
-import 'package:rm_test/features/character/character_screen/character_screen.dart';
+import 'package:rm_test/features/character/character_presentaion/character_bloc/character_bloc.dart';
+import 'package:rm_test/features/character/character_presentaion/character_screen/character_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

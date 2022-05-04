@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import '../../character_domain/character_models/character_model.dart';
+import '../../../character_domain/character_models/character_model.dart';
 import 'character_page.dart';
 
 const defaultTextStyle = TextStyle(color: Colors.white);
