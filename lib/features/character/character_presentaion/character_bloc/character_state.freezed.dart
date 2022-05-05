@@ -19,7 +19,8 @@ class _$CharacterStateTearOff {
 
   _CharacterState call(
       {bool isLoading = false,
-      CharacterPageModel page = const CharacterPageModel(characters: []),
+      CharacterPageModel page =
+          const CharacterPageModel(next: defaultUrl, characters: []),
       IList<CharacterModel> characters =
           const IListConst<CharacterModel>([])}) {
     return _CharacterState(
@@ -151,7 +152,7 @@ class __$CharacterStateCopyWithImpl<$Res>
 class _$_CharacterState extends _CharacterState {
   const _$_CharacterState(
       {this.isLoading = false,
-      this.page = const CharacterPageModel(characters: []),
+      this.page = const CharacterPageModel(next: defaultUrl, characters: []),
       this.characters = const IListConst<CharacterModel>([])})
       : super._();
 

@@ -27,13 +27,21 @@ class CharacterBloc extends Bloc<CharacterEvent, CharacterState> {
           ),
         );
         final page = await _api.getCharacters(url: state.page.next);
-        emit(
-          state.copyWith(
-            isLoading: false,
-            page: page,
-            characters: state.characters.addAll(page.characters),
-          ),
-        );
+        if(page !=null){
+          emit(
+            state.copyWith(
+              isLoading: false,
+              page: page,
+              characters: state.characters.addAll(page.characters),
+            ),
+          );
+        }else{
+          emit(
+            state.copyWith(
+              isLoading: false,
+            ),
+          );
+        }
       },
     );
   }
