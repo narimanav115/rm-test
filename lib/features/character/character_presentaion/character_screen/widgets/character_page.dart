@@ -29,7 +29,6 @@ class CharacterPage extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             color: Colors.deepPurple,
           ),
-
           child: Column(
             children: [
               Padding(
@@ -70,35 +69,35 @@ class CharacterPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 16),
-             Column(
-               crossAxisAlignment: CrossAxisAlignment.start,
-               children: [
-                 Text(
-                   'Species: ${model.species}',
-                   style: defaultTextStyle,
-                 ),
-                 Text(
-                   'Type: ${model.type}',
-                   style: defaultTextStyle,
-                 ),
-                 Text(
-                   'Gender: ${model.gender}',
-                   style: defaultTextStyle,
-                 ),
-                 Text(
-                   'Location: ${model.location.name}',
-                   style: defaultTextStyle,
-                 ),
-                 Text(
-                   'Origin: ${model.origin.name}',
-                   style: defaultTextStyle,
-                 ),
-                 Text(
-                   'Created: ${model.created.month}.${model.created.day}.${model.created.year}',
-                   style: defaultTextStyle,
-                 ),
-               ],
-             )
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Species: ${model.species}',
+                    style: defaultTextStyle,
+                  ),
+                  Text(
+                    'Type: ${model.type}',
+                    style: defaultTextStyle,
+                  ),
+                  Text(
+                    'Gender: ${model.gender}',
+                    style: defaultTextStyle,
+                  ),
+                  Text(
+                    'Location: ${model.location.name}',
+                    style: defaultTextStyle,
+                  ),
+                  Text(
+                    'Origin: ${model.origin.name}',
+                    style: defaultTextStyle,
+                  ),
+                  Text(
+                    'Created: ${model.created.month}.${model.created.day}.${model.created.year}',
+                    style: defaultTextStyle,
+                  ),
+                ],
+              )
             ],
           ),
         ),

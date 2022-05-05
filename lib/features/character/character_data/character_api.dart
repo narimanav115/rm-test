@@ -10,15 +10,15 @@ class CharacterApi {
   const CharacterApi();
 
   Future<CharacterPageModel?> getCharacters({String? url}) async {
-   if(url !=null){
-     final response = await _httpClient.get<Map<String, dynamic>>(
-       url,
-     );
+    if (url != null) {
+      final response = await _httpClient.get<Map<String, dynamic>>(
+        url,
+      );
 
-     return CharacterMapper.mapPage(
-       CharacterPageDto.fromJson(response.data!),
-     );
-   }
-   return null;
+      return CharacterMapper.mapPage(
+        CharacterPageDto.fromJson(response.data!),
+      );
+    }
+    return null;
   }
 }

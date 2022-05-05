@@ -27,7 +27,7 @@ class CharacterBloc extends Bloc<CharacterEvent, CharacterState> {
           ),
         );
         final page = await _api.getCharacters(url: state.page.next);
-        if(page !=null){
+        if (page != null) {
           emit(
             state.copyWith(
               isLoading: false,
@@ -35,7 +35,7 @@ class CharacterBloc extends Bloc<CharacterEvent, CharacterState> {
               characters: state.characters.addAll(page.characters),
             ),
           );
-        }else{
+        } else {
           emit(
             state.copyWith(
               isLoading: false,
